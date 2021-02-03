@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'base/common_widgets.dart';
+
 class SafeAreaDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -17,8 +19,7 @@ class _SafeAreaDemoState extends State<SafeAreaDemo> {
         _fullSizeWidget(withSafeArea),
         Column(children: [
           Spacer(),
-          Text((withSafeArea ? "with" : "without") + " safe area",
-              style: TextStyle(fontSize: 20)),
+          HintText((withSafeArea ? "with" : "without") + " safe area"),
           Transform.scale(
               scale: 1.5,
               child: Switch(onChanged: _toggle, value: withSafeArea)),

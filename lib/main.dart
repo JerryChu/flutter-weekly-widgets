@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'expanded.dart';
 import 'safe_area.dart';
+import 'wrap.dart';
 
 void main() {
   runApp(Expo());
@@ -10,7 +11,7 @@ void main() {
 final Map<String, WidgetBuilder> routes = {
   "SafeArea": (context) => SafeAreaDemo(),
   "Expanded": (context) => ExpandedDemo(),
-  "Wrap": (context) => SafeAreaDemo(),
+  "Wrap": (context) => WrapDemo(),
   "AnimatedContainer": (context) => SafeAreaDemo(),
   "Opacity": (context) => SafeAreaDemo(),
   "FutureBuilder": (context) => SafeAreaDemo(),

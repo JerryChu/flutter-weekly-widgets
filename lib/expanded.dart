@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'base/common_widgets.dart';
+
 class ExpandedDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -10,57 +12,56 @@ class ExpandedDemo extends StatefulWidget {
 class _ExpandedDemoState extends State<ExpandedDemo> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         appBar: AppBar(title: Text("Expanded")),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
-            Text("no expanded"),
+            Separator(),
+            HintText("no expanded"),
             Row(
               children: [
-                _demoWidget(Colors.red, false),
-                _demoWidget(Colors.green, false),
-                _demoWidget(Colors.blue, false),
+                _demoWidget(false),
+                _demoWidget(false),
+                _demoWidget(false),
               ],
             ),
-            SizedBox(height: 10),
-            Text("single expanded (green)"),
+            Separator(),
+            HintText("single expanded"),
             Row(
               children: [
-                _demoWidget(Colors.red, false),
-                _demoWidget(Colors.green, true),
-                _demoWidget(Colors.blue, false),
+                _demoWidget(false),
+                _demoWidget(true),
+                _demoWidget(false),
               ],
             ),
-            SizedBox(height: 10),
-            Text("double expanded (green & blue)"),
+            Separator(),
+            HintText("double expanded"),
             Row(
               children: [
-                _demoWidget(Colors.red, false),
-                _demoWidget(Colors.green, true),
-                _demoWidget(Colors.blue, true),
+                _demoWidget(false),
+                _demoWidget(true),
+                _demoWidget(true),
               ],
             ),
-            SizedBox(height: 10),
-            Text("all expanded"),
+            Separator(),
+            HintText("all expanded"),
             Row(
               children: [
-                _demoWidget(Colors.red, true),
-                _demoWidget(Colors.green, true),
-                _demoWidget(Colors.blue, true),
+                _demoWidget(true),
+                _demoWidget(true),
+                _demoWidget(true),
               ],
             ),
           ],
         ));
   }
 
-  Widget _demoWidget(Color color, bool expanded) {
+  Widget _demoWidget(bool expanded) {
     if (expanded) {
-      return Expanded(child: Container(color: color, height: 100, width: 50));
+      return Expanded(child: ColoredContainer(height: 100, width: 50));
     } else {
-      return Container(color: color, height: 100, width: 50);
+      return ColoredContainer(height: 100, width: 50);
     }
   }
 }
