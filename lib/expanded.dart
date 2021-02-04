@@ -21,47 +21,57 @@ class _ExpandedDemoState extends State<ExpandedDemo> {
             HintText("no expanded"),
             Row(
               children: [
-                _demoWidget(false),
-                _demoWidget(false),
-                _demoWidget(false),
+                _demoWidget(Colors.red, false),
+                _demoWidget(Colors.green, false),
+                _demoWidget(Colors.blue, false),
               ],
             ),
             Separator(),
             HintText("single expanded"),
             Row(
               children: [
-                _demoWidget(false),
-                _demoWidget(true),
-                _demoWidget(false),
+                _demoWidget(Colors.red, false),
+                _demoWidget(Colors.green, true),
+                _demoWidget(Colors.blue, false),
               ],
             ),
             Separator(),
             HintText("double expanded"),
             Row(
               children: [
-                _demoWidget(false),
-                _demoWidget(true),
-                _demoWidget(true),
+                _demoWidget(Colors.red, false),
+                _demoWidget(Colors.green, true),
+                _demoWidget(Colors.blue, true),
               ],
             ),
             Separator(),
             HintText("all expanded"),
             Row(
               children: [
-                _demoWidget(true),
-                _demoWidget(true),
-                _demoWidget(true),
+                _demoWidget(Colors.red, true),
+                _demoWidget(Colors.green, true),
+                _demoWidget(Colors.blue, true),
               ],
             ),
           ],
         ));
   }
 
-  Widget _demoWidget(bool expanded) {
+  Widget _demoWidget(Color color, bool expanded) {
     if (expanded) {
-      return Expanded(child: ColoredContainer(height: 100, width: 50));
+      return Expanded(
+        child: ColoredContainer(
+          height: 100,
+          width: 50,
+          color: color,
+        ),
+      );
     } else {
-      return ColoredContainer(height: 100, width: 50);
+      return ColoredContainer(
+        height: 100,
+        width: 50,
+        color: color,
+      );
     }
   }
 }

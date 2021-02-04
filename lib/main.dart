@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:weekly_widgets/animated_container.dart';
+import 'package:weekly_widgets/future_builder.dart';
+import 'package:weekly_widgets/opacity.dart';
 
 import 'expanded.dart';
 import 'safe_area.dart';
@@ -12,9 +15,9 @@ final Map<String, WidgetBuilder> routes = {
   "SafeArea": (context) => SafeAreaDemo(),
   "Expanded": (context) => ExpandedDemo(),
   "Wrap": (context) => WrapDemo(),
-  "AnimatedContainer": (context) => SafeAreaDemo(),
-  "Opacity": (context) => SafeAreaDemo(),
-  "FutureBuilder": (context) => SafeAreaDemo(),
+  "AnimatedContainer": (context) => AnimatedContainerDemo(),
+  "Opacity": (context) => OpacityDemo(),
+  "FutureBuilder": (context) => FutureBuilderDemo(),
 };
 
 // Demo for Flutter Weekly Widgets
