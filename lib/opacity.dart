@@ -17,7 +17,7 @@ class _OpacityDemoState extends State<OpacityDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AnimatedContainer"),
+        title: Text("Opacity"),
       ),
       body: Center(
         child: Row(
