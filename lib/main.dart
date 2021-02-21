@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:weekly_widgets/animated_container.dart';
-import 'package:weekly_widgets/fade_transition.dart';
-import 'package:weekly_widgets/future_builder.dart';
-import 'package:weekly_widgets/opacity.dart';
 
+import 'animated_container.dart';
+import 'fade_transition.dart';
+import 'future_builder.dart';
+import 'opacity.dart';
 import 'expanded.dart';
+import 'floating_action_button.dart';
 import 'safe_area.dart';
 import 'wrap.dart';
 
@@ -20,6 +21,7 @@ final Map<String, WidgetBuilder> routes = {
   "Opacity": (context) => OpacityDemo(),
   "FutureBuilder": (context) => FutureBuilderDemo(),
   "FadeTransition": (context) => FadeTransitionDemo(),
+  "FloatingActionButton": (context) => FloatingActionButtonDemo(),
 };
 
 // Demo for Flutter Weekly Widgets
