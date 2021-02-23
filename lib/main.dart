@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weekly_widgets/page_view.dart';
 
 import 'animated_container.dart';
 import 'fade_transition.dart';
@@ -22,6 +23,7 @@ final Map<String, WidgetBuilder> routes = {
   "FutureBuilder": (context) => FutureBuilderDemo(),
   "FadeTransition": (context) => FadeTransitionDemo(),
   "FloatingActionButton": (context) => FloatingActionButtonDemo(),
+  "PageView": (context) => PageViewDemo(),
 };
 
 // Demo for Flutter Weekly Widgets
