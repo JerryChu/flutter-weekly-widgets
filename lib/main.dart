@@ -8,6 +8,7 @@ import 'opacity.dart';
 import 'expanded.dart';
 import 'floating_action_button.dart';
 import 'safe_area.dart';
+import 'table.dart';
 import 'wrap.dart';
 
 void main() {
@@ -24,6 +25,7 @@ final Map<String, WidgetBuilder> routes = {
   "FadeTransition": (context) => FadeTransitionDemo(),
   "FloatingActionButton": (context) => FloatingActionButtonDemo(),
   "PageView": (context) => PageViewDemo(),
+  "Table": (context) => TableDemo(),
 };
 
 // Demo for Flutter Weekly Widgets
