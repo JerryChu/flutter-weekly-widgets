@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:weekly_widgets/page_view.dart';
-
-import 'animated_container.dart';
-import 'fade_transition.dart';
-import 'future_builder.dart';
-import 'opacity.dart';
-import 'expanded.dart';
-import 'floating_action_button.dart';
-import 'safe_area.dart';
-import 'table.dart';
-import 'wrap.dart';
+import 'package:weekly_widgets/sliver_app_bar.dart';
+import 'package:weekly_widgets/animated_container.dart';
+import 'package:weekly_widgets/fade_transition.dart';
+import 'package:weekly_widgets/future_builder.dart';
+import 'package:weekly_widgets/opacity.dart';
+import 'package:weekly_widgets/expanded.dart';
+import 'package:weekly_widgets/floating_action_button.dart';
+import 'package:weekly_widgets/safe_area.dart';
+import 'package:weekly_widgets/table.dart';
+import 'package:weekly_widgets/wrap.dart';
 
 void main() {
   runApp(Expo());
@@ -26,6 +26,7 @@ final Map<String, WidgetBuilder> routes = {
   "FloatingActionButton": (context) => FloatingActionButtonDemo(),
   "PageView": (context) => PageViewDemo(),
   "Table": (context) => TableDemo(),
+  "SilverAppBar": (context) => SliverAppBarDemo(),
 };
 
 // Demo for Flutter Weekly Widgets
